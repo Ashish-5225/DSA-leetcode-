@@ -15,14 +15,14 @@ class Solution {
                 if (Math.abs(current_sum - target) < Math.abs(closestSum - target)) {
                     closestSum = current_sum;
                 }
-              if (current_sum>target){
-                k--;
+              if (current_sum ==target){
+              return current_sum;
               }
               else if(current_sum<target){
                   j++;
               }
                else{
-                return current_sum;
+                k--;
                }
             }
         }
