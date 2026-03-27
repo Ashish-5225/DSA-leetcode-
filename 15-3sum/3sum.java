@@ -6,7 +6,7 @@ class Solution {
         Arrays.sort(nums);
 
         for (int i = 0; i < nums.length; i++) {
-            // Skip duplicate elements for i
+           
             if (i > 0 && nums[i] == nums[i - 1]) continue;
 
             int j = i + 1;
@@ -23,7 +23,7 @@ class Solution {
                     res.add(Arrays.asList(nums[i], nums[j], nums[k]));
                     j++;
 
-                    // Skip duplicate elements for j
+                   
                     while (j < k && nums[j] == nums[j - 1]) {
                         j++;
                     }
